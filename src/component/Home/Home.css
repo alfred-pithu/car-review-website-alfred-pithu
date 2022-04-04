@@ -1,0 +1,8 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card-container {
+    height: 250px;
+}
