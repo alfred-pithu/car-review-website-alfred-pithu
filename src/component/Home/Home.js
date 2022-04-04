@@ -2,9 +2,14 @@ import React from 'react';
 import './Home.css'
 import car from '../../images/car.jpg'
 import { useNavigate } from 'react-router-dom';
+import useData from '../../Hooks/useData/useData';
+import Card from '../Card/Card';
 
 const Home = () => {
     const navigate = useNavigate();
+    const [data, setData] = useData();
+    const modifiedData = data.splice(0, 3);
+    console.log(modifiedData);
     return (
         <div>
             <div className='home-container container mt-5  h-100 ' >
@@ -24,8 +29,10 @@ const Home = () => {
             <div className='mt-5'>
                 <h2 className='text-center'>Customer Reviews</h2>
 
-                <div className='card-container'>
-
+                <div className=' container mx-auto row row-cols-1 row-cols-lg-3 g-3 my-5'>
+                    {
+                        modifiedData.map(review => <Card key={review.id} review={review}></Card>)
+                    }
                 </div>
 
                 <div className='d-flex justify-content-center mb-3'>
