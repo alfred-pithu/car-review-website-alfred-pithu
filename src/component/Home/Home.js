@@ -12,7 +12,7 @@ const Home = () => {
     console.log(modifiedData);
     return (
         <div>
-            <div className='home-container container mt-5 mb-lg-0 mb-5 row mx-auto ' >
+            <div className='home-container container  mb-lg-5 mb-sm-5 row mx-auto ' >
 
                 <div className='col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center '>
                     <h1 className='fw-bolder text-primary text-center mb-4'>Your New Car</h1>
@@ -26,7 +26,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className=' mt-5 '>
+            <div className=' border border-1 mt-5 '>
                 <h2 className='text-center'>Customer Reviews</h2>
 
                 <div className=' container mx-auto row row-cols-1 row-cols-lg-3 g-3 mt-4 mb-3'>
