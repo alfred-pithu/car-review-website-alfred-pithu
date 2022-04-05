@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# This Project is made by Alfred Pithu as an Assignment for Programming Hero
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Live Site Link 
+ https://www.facebook.com/ 
+
+# Project Details -
+- Bootstrap has been used for styling
+- React Router has been used for routing
+- React JS has been used as JS Library
+- Hosted in Netlify
+
+
+
+
 
 ## Available Scripts
 
