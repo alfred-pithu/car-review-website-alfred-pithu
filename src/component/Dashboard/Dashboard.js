@@ -66,7 +66,7 @@ const Dashboard = () => {
                         height={200}
                         data={data}
                         margin={{
-                            top: 20,
+                            top: 10,
                             right: 30,
                             left: 20,
                             bottom: 5,
@@ -86,8 +86,8 @@ const Dashboard = () => {
                 <div className='  col-lg-6  col-12 '>
                     <h6 className='text-center text-primary'>Investment VS Revenue</h6>
                     <PieChart className='mx-auto' width={300} height={300}>
-                        <Pie data={data} dataKey="investment" cx='50%' cy='50%' outerRadius={60} fill="#8884d8" />
-                        <Pie data={data} dataKey="revenue" cx='50%' cy='50%' innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+                        <Pie data={data} dataKey="investment" cx='50%' cy='35%' outerRadius={60} fill="#8884d8" />
+                        <Pie data={data} dataKey="revenue" cx='50%' cy='35%' innerRadius={70} outerRadius={90} fill="#82ca9d" label />
                         <Tooltip></Tooltip>
                     </PieChart>
                 </div>
