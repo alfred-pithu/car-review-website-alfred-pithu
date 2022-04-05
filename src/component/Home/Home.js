@@ -12,24 +12,24 @@ const Home = () => {
     console.log(modifiedData);
     return (
         <div>
-            <div className='home-container container mt-5  h-100 ' >
-                <div className='w-75 mx-auto'>
+            <div className='home-container container mt-5 mb-3 row ' >
+
+                <div className='  mx-auto col-12 col-lg-7 d-flex flex-column align-items-center justify-content-center '>
                     <h1 className='fw-bolder text-primary text-center mb-4'>Your New Car</h1>
                     <p className='text-start'>
                         Choosing your new car is always a tough choice we understand. Luckily you are at the right place and we got you covered. Check the reviews of this model to get the answers to your all questions.
                     </p>
                 </div>
 
-
-                <div className=''>
-                    <img className='img-fluid ' src={car} alt="" />
+                <div className='col-12 col-lg-5 d-flex align-items-center'>
+                    <img className='img-fluid border rounded-2 ' src={car} alt="" />
                 </div>
             </div>
 
-            <div className='mt-5'>
+            <div className=''>
                 <h2 className='text-center'>Customer Reviews</h2>
 
-                <div className=' container mx-auto row row-cols-1 row-cols-lg-3 g-3 my-5'>
+                <div className=' container mx-auto row row-cols-1 row-cols-lg-3 g-3 mt-4 mb-3'>
                     {
                         modifiedData.map(review => <Card key={review.id} review={review}></Card>)
                     }
