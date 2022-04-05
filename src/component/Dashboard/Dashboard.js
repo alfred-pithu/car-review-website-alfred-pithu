@@ -16,11 +16,11 @@ const Dashboard = () => {
     console.log(data);
     return (
         <div className='container '>
-            {/* <h2>Dashboard</h2> */}
 
-            <div className='row g-5'>
 
-                <div className='  col-lg-6 col-12 '>
+            <div className='row gx-3 gy-4'>
+
+                <div className='  col-lg-6 col-12'>
                     <h6 className='text-center  text-primary'>Month-wise sales</h6>
 
                     <LineChart className='mx-auto' width={300} height={200} data={data}>
