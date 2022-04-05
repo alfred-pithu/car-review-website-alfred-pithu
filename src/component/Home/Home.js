@@ -26,7 +26,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className=' border border-1 mt-5 '>
+            <div className=' mt-5 '>
                 <h2 className='text-center'>Customer Reviews</h2>
 
                 <div className=' container mx-auto row row-cols-1 row-cols-lg-3 g-3 mt-4 mb-3'>
